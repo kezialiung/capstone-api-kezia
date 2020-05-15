@@ -44,6 +44,8 @@ def get_data_equal(month_name):
                                   aggfunc=sum)
     sales = sales.reset_index().melt(id_vars = 'FullName')
     sales = sales[sales['value'].notna()]
+    month = data['Month'] == month_name
+    sales = sales[month]
     return (sales.to_json())
 
 if __name__ == '__main__':
