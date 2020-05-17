@@ -2,7 +2,7 @@
 <body> This file is a documentation done by Kezia Surani Liung for the Capstone Project - Kappa class. This project was deployed as of Monday, May 17th, 2020. The read_sql_query is used to create a dataframe and extract the needed columns from chinook.db which will be used throughout this exercise.</body><br>
 <h1> Documentation </h1>
 <h2> Welcoming page </h2>
-<body> I have prepared a few url in the home page to direct users to some endpoints </body>
+<body> I have prepared a base endpoint in the home page to direct users to some endpoints. </body>
 <h2> Static Endpoints </h2>
 <ol><li>
 <p><b> /cust </b>, method = <b>GET</b> </p>
