@@ -33,7 +33,7 @@
 </ul></ol>
 <h2> Dynamic Endpoints </h2>
 <ol><li>
-<p><b> /data/get/equal/data/&lt;month_name&gt;</b>, method = <b>GET</b></p>
+<p><b> /get/sales/month/&lt;month_name&gt;</b>, method = <b>GET</b></p>
 <p> This endpoint returns the sales data by Customer and by Genre that happened in a specific month. Each month input will return different string. The <i>month</i> value here is inputted to replace the <i>month_name</i> at the end of the link.</p>
 <p>User should use the full month name to use this, for example: January, February and so on.</p>
 </li></ol>

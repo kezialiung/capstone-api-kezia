@@ -25,7 +25,7 @@ def get_text():
 <h1> Nothing to see here. Move along. Here are some url to follow:</h1>
 <li> For all <a href="https://capstone-api-algoritma-kezia.herokuapp.com/cust">customers</a> sales data.</li>
 <li> For country sales by <a href="https://capstone-api-algoritma-kezia.herokuapp.com/genre">genre</a>.</li>
-<li> For monthly sales, here is an example for <a href="https://capstone-api-algoritma-kezia.herokuapp.com/data/get/equal/data/January">January</a>.</li>
+<li> For monthly sales, here is an example for <a href="https://capstone-api-algoritma-kezia.herokuapp.com/get/sales/month/January">January</a>.</li>
 <p> You can change the month name to get the appropriate monthly sales.</p>
     '''
 
@@ -44,7 +44,7 @@ def get_data_genre():
     return (genre_country.to_json())
 
 # mendapatkan data dengan filter kolom Genre
-@app.route('/data/get/equal/data/<month_name>', methods=['GET']) 
+@app.route('/get/sales/month/<month_name>', methods=['GET']) 
 def get_data_equal(month_name): 
     data = get_data()
     sales = pd.pivot_table(data=data,
