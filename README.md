@@ -1,9 +1,7 @@
 # capstone-api-kezia
-# contoh dokumentasi
-## &lt;
-# diganti menjadi &gt;
+## This file is a documentation done by Kezia Surani Liung for the Capstone Project
 
-@app.route("/docs", methods='GET')
+@app.route('/docs', methods=['GET'])
 def documentation():
     return '''
     <h1> Documentation </h1>
@@ -17,12 +15,12 @@ def documentation():
     <h2> Dynamic Endpoints </h2>
     <ol start = "2">
         <li>
-            <p> /data/get/&lt;data_name> , method = GET 
+            <p> /data/get/equal/data/&lt;data_name&&gt; , method = GET 
             </p>
             <p> Return full data &lt;data_name&gt; in JSON format. Currently available data are: 
             </p>
             <ul style="list-style-type:disc;">
-                <li> books_c.csv </li>
+                <li> chinook.db </li>
                 <li> pulsar_stars.csv </li>
             </ul>
         </li>
