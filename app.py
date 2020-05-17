@@ -18,7 +18,17 @@ LEFT JOIN genres as g ON g.genreid = t.genreid", conn, parse_dates= 'InvoiceDate
                                          categories=monthorder,
                                          ordered=True)
     return data
- 
+# testing home page
+@app.route('/', methods=['GET']) 
+def get_text():
+    return '''
+<h1> Nothing to see here. Move along. Here are some url to follow:</h1>
+<li> For all <a href="https://capstone-api-algoritma-kezia.herokuapp.com/cust">customers</a> sales data.</li>
+<li> For country sales by <a href="https://capstone-api-algoritma-kezia.herokuapp.com/genre">genre</a>.</li>
+<li> For monthly sales, here is an example for <a href="https://capstone-api-algoritma-kezia.herokuapp.com/data/get/equal/data/January">January</a>.</li>
+<p> You can change the month name to get the appropriate monthly sales.</p>
+    '''
+
 # mendapatkan keseluruhan sales data dari customers
 @app.route('/cust', methods=['GET']) 
 def get_data_cust():
@@ -52,6 +62,8 @@ def get_data_equal(month_name):
 def documentation():
     return '''
 <h1> Documentation </h1>
+<h2> Welcoming page </h2>
+<body> I have prepared a few url in the home page to direct users to some endpoints. </body>
 <h2> Static Endpoints </h2>
 <ol><li>
 <p><b> /cust </b>, method = <b>GET</b> </p>
