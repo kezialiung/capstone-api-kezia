@@ -1,5 +1,5 @@
 <h1>Project: capstone-api-kezia</h1>
-<li><p>This file is a documentation done by Kezia Surani Liung for the Capstone Project - Kappa class. This project was deployed as of Monday, May 17th, 2020. The read_sql_query is used to create a dataframe and extract the needed columns from chinook.db which will be used throughout this exercise.</p></li>
+<body> This file is a documentation done by Kezia Surani Liung for the Capstone Project - Kappa class. This project was deployed as of Monday, May 17th, 2020. The read_sql_query is used to create a dataframe and extract the needed columns from chinook.db which will be used throughout this exercise.</body><br>
 <h1> Documentation </h1>
 <h2> Static Endpoints </h2>
 <ol><li>
