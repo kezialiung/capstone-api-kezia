@@ -33,7 +33,7 @@ def get_data_genre():
     genre_country = genre_country.unstack(level=0).dropna()
     return (genre_country.to_json())
 
-#mendapatkan data dengan filter kolom Genre
+# mendapatkan data dengan filter kolom Genre
 @app.route('/data/get/equal/data/<month_name>', methods=['GET']) 
 def get_data_equal(month_name): 
     data = get_data()
