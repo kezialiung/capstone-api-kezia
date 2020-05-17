@@ -1,7 +1,8 @@
-# capstone-api-kezia# contoh dokumentasi
-# < diganti menjadi &lt;
-# > diganti menjadi &gt;
-@app.route("/docs")
+# capstone-api-kezia
+## contoh dokumentasi
+## &lt;
+# diganti menjadi &gt;
+@app.route("/docs", methods='GET')
 def documentation():
     return '''
         <h1> Documentation </h1>
