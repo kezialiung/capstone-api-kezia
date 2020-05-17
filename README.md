@@ -1,5 +1,5 @@
-# capstone-api-kezia
-### This file is a documentation done by Kezia Surani Liung for the Capstone Project - Kappa class. This project was deployed as of Monday, May 17th, 2020. The read_sql_query is used to create a dataframe and extract the needed columns from chinook.db which will be used throughout this exercise.
+<h1>capstone-api-kezia</h1>
+<p>This file is a documentation done by Kezia Surani Liung for the Capstone Project - Kappa class. This project was deployed as of Monday, May 17th, 2020. The read_sql_query is used to create a dataframe and extract the needed columns from chinook.db which will be used throughout this exercise.</p>
 <h1> Documentation </h1>
 <h2> Static Endpoints </h2>
 <ol><li>
@@ -33,6 +33,5 @@
 <ol><li>
 <p><b> /data/get/equal/data/&lt;month_name&gt;</b>, method = <b>GET</b></p>
 <p> This endpoint returns the sales data by Customer and by Genre that happened in a specific month. Each month input will return different string. The <i>month</i> value here is inputted to replace the <i>month_name</i> at the end of the link.</p>
-<br>
 <p>User should use the full month name to use this, for example: January, February and so on.</p>
 </li></ol>
